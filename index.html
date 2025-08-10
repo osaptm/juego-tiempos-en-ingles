@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Tiempos Verbales en Inglés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Juego de Tiempos Verbales</h1>
+            <p>Aprende a identificar tiempos verbales en inglés</p>
+        </header>
+
+        <!-- Pantalla de inicio -->
+        <div id="pantalla-inicio" class="pantalla">
+            <div class="card">
+                <h2>¡Bienvenido al juego!</h2>
+                <p>Practica identificando tiempos verbales, variaciones y tipos de oraciones.</p>
+                <button id="btn-iniciar" class="btn btn-primary">Comenzar Juego</button>
+            </div>
+        </div>
+
+        <!-- Pantalla del juego -->
+        <div id="pantalla-juego" class="pantalla oculto">
+            <div class="game-info">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="stats">
+                    <span id="pregunta-actual">0</span> / <span id="total-preguntas">0</span>
+                    <span class="separator">|</span>
+                    <span>Aciertos: <span id="aciertos">0</span></span>
+                    <span class="separator">|</span>
+                    <span>Errores: <span id="errores">0</span></span>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="verbo-info">
+                    <h3>Verbo: <span id="verbo-actual"></span></h3>
+                    <p>Traducción: <span id="traduccion-actual"></span></p>
+                </div>
+
+                <div class="oracion-container">
+                    <h4>Identifica esta oración:</h4>
+                    <div class="oracion">
+                        <span id="oracion-texto"></span>
+                    </div>
+                    <p class="traduccion-oracion" id="traduccion-oracion"></p>
+                </div>
+
+                <div class="preguntas">
+                    <div class="pregunta-grupo">
+                        <h4>¿Qué tiempo verbal es?</h4>
+                        <div class="opciones" id="opciones-tiempo"></div>
+                    </div>
+
+                    <div class="pregunta-grupo">
+                        <h4>¿Qué variación es?</h4>
+                        <div class="opciones" id="opciones-variacion"></div>
+                    </div>
+
+                    <div class="pregunta-grupo">
+                        <h4>¿Qué tipo de oración es?</h4>
+                        <div class="opciones" id="opciones-tipo"></div>
+                    </div>
+                </div>
+
+                <button id="btn-responder" class="btn btn-primary btn-responder" disabled>Responder</button>
+            </div>
+        </div>
+
+        <!-- Pantalla de resultados -->
+        <div id="pantalla-resultados" class="pantalla oculto">
+            <div class="card">
+                <h2>¡Juego Completado!</h2>
+                <div class="resultados">
+                    <div class="resultado-item">
+                        <span class="label">Aciertos:</span>
+                        <span id="aciertos-final" class="valor acierto"></span>
+                    </div>
+                    <div class="resultado-item">
+                        <span class="label">Errores:</span>
+                        <span id="errores-final" class="valor error"></span>
+                    </div>
+                    <div class="resultado-item">
+                        <span class="label">Porcentaje:</span>
+                        <span id="porcentaje-final" class="valor"></span>
+                    </div>
+                </div>
+                <div class="acciones">
+                    <button id="btn-reiniciar" class="btn btn-primary">Jugar de Nuevo</button>
+                    <button id="btn-inicio" class="btn btn-secondary">Volver al Inicio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de explicación -->
+    <div class="modal-overlay" id="modal-explicacion">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title" id="modal-oracion-ingles">---</div>
+                <div class="modal-subtitle" id="modal-oracion-traduccion">---</div>
+            </div>
+            <div class="modal-content">
+                <div class="respuestas-comparacion">
+                    <div class="respuesta-usuario">
+                        <div class="respuesta-titulo">Tu respuesta:</div>
+                        <div class="respuesta-valor" id="modal-respuesta-usuario">---</div>
+                    </div>
+                    <div class="respuesta-correcta">
+                        <div class="respuesta-titulo">Respuesta correcta:</div>
+                        <div class="respuesta-valor" id="modal-respuesta-correcta">---</div>
+                    </div>
+                </div>
+                <div id="modal-explicacion-contenido">
+                    <!-- El contenido se llenará dinámicamente -->
+                </div>
+                <div class="auxiliar-info">
+                    <div class="auxiliar-titulo">Auxiliar correspondiente:</div>
+                    <div class="auxiliar-valor" id="modal-auxiliar">---</div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-modal" id="btn-cerrar-modal">Continuar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
