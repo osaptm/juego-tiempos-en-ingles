@@ -9,77 +9,77 @@
                     "pronombre": "I",
                     "traduccion": "yo",
                     "conjugar_tiempos": {
-                        "tiempo_presente": {
-                            "presente_simple": {
-                                "positivo": {
-                                    "conjugacion": "I play",
-                                    "traduccion": "yo juego",
-                                    "auxiliar": "---"
+                            "tiempo_presente": {
+                                "presente_simple": {
+                                    "positivo": {
+                                         "conjugacion": "I play",
+                                         "traduccion": "yo juego",
+                                         "auxiliar": "---"              
+                                    },
+                                    "negativo": {
+                                        "conjugacion": "I don't play",
+                                        "traduccion": "yo no juego",
+                                        "auxiliar": "don't - do not"
+                                    },
+                                    "interrogativo": {
+                                        "conjugacion": "Do I play?",
+                                        "traduccion": "¿Yo juego?",
+                                        "auxiliar": "do"
+                                    }
                                 },
-                                "negativo": {
-                                    "conjugacion": "I don't play",
-                                    "traduccion": "yo no juego",
-                                    "auxiliar": "don't - do not"
-                                },
-                                "interrogativo": {
-                                    "conjugacion": "Do I play?",
-                                    "traduccion": "¿Yo juego?",
-                                    "auxiliar": "do"
-                                }
-                            },
-                            "presente_continuo": {
-                                "positivo": {
-                                    "conjugacion": "I am playing",
-                                    "traduccion": "yo estoy jugando",
-                                    "auxiliar": "am"
-                                },
-                                "negativo": {
-                                    "conjugacion": "I am not playing",
-                                    "traduccion": "yo no estoy jugando",
-                                    "auxiliar": "am not"
-                                },
-                                "interrogativo": {
+                                "presente_continuo": {
+                                    "positivo": {
+                                        "conjugacion": "I am playing",
+                                        "traduccion": "yo estoy jugando",
+                                        "auxiliar": "am"
+                                    },
+                                    "negativo": {
+                                        "conjugacion": "I am not playing",
+                                        "traduccion": "yo no estoy jugando",
+                                        "auxiliar": "am not"
+                                    },
+                                    "interrogativo": {
                                     "conjugacion": "Am I playing?",
                                     "traduccion": "¿Yo estoy jugando?",
                                     "auxiliar": "am"
+                                    }
+                                },
+                                "presente_perfecto": {
+                                    "positivo": {
+                                        "conjugacion": "I have played",
+                                        "traduccion": "yo he jugado",
+                                        "auxiliar": "have"
+                                    },
+                                    "negativo": {
+                                        "conjugacion": "I have not played",
+                                        "traduccion": "yo no he jugado",
+                                        "auxiliar": "have not - haven't"
+                                    },
+                                    "interrogativo": {
+                                        "conjugacion": "Have I played?",
+                                        "traduccion": "¿Yo he jugado?",
+                                        "auxiliar": "have"
+                                    }
+                                },
+                                "presente_perfecto_continuo": {
+                                    "positivo": {
+                                        "conjugacion": "I have been playing",
+                                        "traduccion": "yo he estado jugando",
+                                        "auxiliar": "have been"
+                                    },
+                                    "negativo": {
+                                        "conjugacion": "I have not been playing",
+                                        "traduccion": "yo no he estado jugando",
+                                        "auxiliar": "have not been - haven't been"
+                                    },
+                                    "interrogativo": {  
+                                        "conjugacion": "Have I been playing?",
+                                        "traduccion": "¿Yo he estado jugando?",
+                                        "auxiliar": "have"
+                                    }
                                 }
-                            },
-                            "presente_perfecto": {
-                                "positivo": {
-                                    "conjugacion": "I have played",
-                                    "traduccion": "yo he jugado",
-                                    "auxiliar": "have"
-                                },
-                                "negativo": {
-                                    "conjugacion": "I have not played",
-                                    "traduccion": "yo no he jugado",
-                                    "auxiliar": "have not - haven't"
-                                },
-                                "interrogativo": {
-                                    "conjugacion": "Have I played?",
-                                    "traduccion": "¿Yo he jugado?",
-                                    "auxiliar": "have"
                                 }
-                            },
-                            "presente_perfecto_continuo": {
-                                "positivo": {
-                                    "conjugacion": "I have been playing",
-                                    "traduccion": "yo he estado jugando",
-                                    "auxiliar": "have been"
-                                },
-                                "negativo": {
-                                    "conjugacion": "I have not been playing",
-                                    "traduccion": "yo no he estado jugando",
-                                    "auxiliar": "have not been - haven't been"
-                                },
-                                "interrogativo": {
-                                    "conjugacion": "Have I been playing?",
-                                    "traduccion": "¿Yo he estado jugando?",
-                                    "auxiliar": "have"
-                                }
-                            }
-                        }
-                    }
+                            }  
                 }
             ]
         },

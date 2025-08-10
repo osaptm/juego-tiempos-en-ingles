@@ -796,8 +796,9 @@ class JuegoTiemposVerbos {
     }
     
     continuarSiguientePregunta() {
+        alert("Respuesta correcta, dale al boton SIGUIENTE para continuar");
         // Deshabilitar botón y cambiar texto
-        document.getElementById('btn-responder').disabled = true;
+        document.getElementById('btn-responder').disabled = false;
         document.getElementById('btn-responder').textContent = 'Siguiente';
         
         // Cambiar el evento del botón para avanzar a la siguiente pregunta
